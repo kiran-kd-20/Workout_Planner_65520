@@ -13,20 +13,19 @@ def calculate_bmi(weight, height_cm):
     except ValueError as e:
         return f"Input Error: {e}"
 
-
 def workout_plan(bmi):
     try:
         if isinstance(bmi, str):
             return bmi
 
         if bmi < 18.5:
-            return "Workout: 20 mins/day (light)\nDiet: High-protein meals"
+            return "Workout: 20 mins/day (light) at Home\nDiet: High-protein meals"
         elif 18.5 <= bmi < 24.9:
-            return "Workout: 30 mins/day (moderate)\nDiet: Balanced diet"
+            return "Workout: 30 mins/day (moderate) at Home or Gym\nDiet: Balanced diet"
         elif 25 <= bmi < 29.9:
-            return "Workout: 45 mins/day (intense)\nDiet: Low-carb meals"
+            return "Workout: 45 mins/day (intense) at Gym\nDiet: Low-carb meals"
         else:
-            return "Workout: 60 mins/day (intense + cardio)\nDiet: Very low-carb, high-protein"
+            return "Workout: 60 mins/day (intense + cardio) at Gym\nDiet: Very low-carb, high-protein"
     except Exception as e:
         return f"Error in workout plan: {e}"
 if __name__ == "__main__":
