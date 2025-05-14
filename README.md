@@ -16,5 +16,5 @@ The app also includes **exception handling** to prevent crashes due to invalid u
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YourUsername/WorkoutPlanner-21K-1234.git
-   cd WorkoutPlanner-21K-1234
+   git clone https://github.com/kiran-kd-20/Workout_Planner_65520
+   cd Workout_Planner_65520
